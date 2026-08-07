@@ -1,0 +1,6 @@
+_site/
+push.sh
+.DS_Store
+
+# original CV copy kept at repo root (served copy lives in files/)
+/CV_Yuanqing_UTD.pdf
