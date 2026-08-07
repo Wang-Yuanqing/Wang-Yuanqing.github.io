@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yuanqing Wang"
-description              : ""
+description              : "Personal academic homepage of Yuanqing Wang, a Mathematics PhD student at UT Dallas researching post-training for long-horizon LLM agents."
 repository               : "Wang-Yuanqing/Wang-Yuanqing.github.io"
 google_scholar_stats_use_cdn : true
 
