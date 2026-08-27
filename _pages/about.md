@@ -14,17 +14,19 @@ redirect_from:
     <p>
       Hi there! I am Yuanqing Wang (王源清), and I also go by Yuan.
       I am a Mathematics PhD student at
-      <a href="https://www.utdallas.edu/" target="_blank" rel="noopener">The University of Texas at Dallas</a>,
+      <a href="https://cs.utdallas.edu/583/president-determined-for-utd-to-reach-tier-one/" target="_blank" rel="noopener">The University of Texas at Dallas</a>,
       advised by
       <a href="https://personal.utdallas.edu/~bxc190014/" target="_blank" rel="noopener">Professor Baris Coskunuzer</a>.
     </p>
     <p>
       My research focuses on post-training for long-horizon LLM agents, particularly agentic
-      reinforcement learning, credit assignment, and self-evolving agents.
+      reinforcement learning, credit assignment, and self-improving agents.
     </p>
     <p>
-      Before coming to UT Dallas, I received my M.S. in Mathematics from Capital Normal University
-      and my B.S. in Information and Computational Science from Xiamen University.
+      Before coming to UT Dallas, I received my M.S. in Mathematics from
+      <a href="https://en.wikipedia.org/wiki/Capital_Normal_University" target="_blank" rel="noopener">Capital Normal University</a>
+      and my B.S. in Information and Computational Science from
+      <a href="https://en.wikipedia.org/wiki/Xiamen_University" target="_blank" rel="noopener">Xiamen University</a>.
     </p>
     <p>
       <strong>I am actively seeking internship opportunities</strong> and would be happy to connect with researchers and teams working on related problems. Please feel free to reach out!
