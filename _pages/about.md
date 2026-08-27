@@ -12,7 +12,7 @@ redirect_from:
   <h1>About Me</h1>
   <div class="about-text">
     <p>
-      Hi there! I am Yuanqing Wang (王源清). You can just call me Yuan.
+      Hi there! I am Yuanqing Wang (王源清), and I also go by Yuan.
       I am a Mathematics PhD student at
       <a href="https://www.utdallas.edu/" target="_blank" rel="noopener">The University of Texas at Dallas</a>,
       advised by
@@ -27,7 +27,7 @@ redirect_from:
       and my B.S. in Information and Computational Science from Xiamen University.
     </p>
     <p>
-      I am actively seeking research internship opportunities and would be happy to connect with researchers and teams working on related problems. Please feel free to reach out!
+      <strong>I am actively seeking research internship opportunities</strong> and would be happy to connect with researchers and teams working on related problems. Please feel free to reach out!
     </p>
   </div>
 </section>
@@ -38,7 +38,7 @@ redirect_from:
     <ul>
       <li>
         <span class="news-date">2026.08</span>
-        <span class="news-content">dwDPO accepted to <strong>EMNLP 2026 Main</strong>, and Skill-CDPO accepted to <strong>EMNLP 2026 Findings</strong>.</span>
+        <span class="news-content">Co-first-author paper dwDPO accepted to <strong>EMNLP 2026 Main</strong>, and Skill-CDPO accepted to <strong>EMNLP 2026 Findings</strong>.</span>
       </li>
     </ul>
   </div>

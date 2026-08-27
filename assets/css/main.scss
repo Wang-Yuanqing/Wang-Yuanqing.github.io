@@ -223,12 +223,12 @@ body {
 }
 
 .author__bio {
-    max-width: 18rem;
-    margin: 0 auto 1.25rem;
+    max-width: 20rem;
+    margin: 0 auto 1.1rem;
     color: var(--academic-muted);
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    line-height: 1.45;
+    line-height: 1.5;
 }
 
 .author__urls-wrapper {
@@ -245,34 +245,73 @@ body {
 .author__urls_sm {
     display: flex !important;
     justify-content: center;
-    gap: 0.8rem;
+    gap: 0.35rem 1.15rem;
     flex-wrap: wrap;
-    margin: 0 0 1.75rem;
+    margin: 0 0 1.5rem;
     padding: 0;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .author__urls_sm a {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    color: var(--academic-muted);
-    background: #fff;
-    border: 1px solid var(--academic-border);
-    border-radius: 50%;
-    font-size: 1.4rem;
+    gap: 0.38rem;
+    width: auto;
+    height: auto;
+    padding: 0;
+    color: var(--academic-link);
+    background: none;
+    border: 0;
+    border-radius: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, background 0.2s ease;
+    transition: color 0.2s ease;
+}
+
+.author__urls_sm a i {
+    font-size: 0.95rem;
+}
+
+.author__interests {
+    width: 100%;
+    margin: 0 0 1.6rem;
+}
+
+.author__interests h4 {
+    margin: 0 0 0.55rem;
+    color: var(--academic-primary);
+    font-family: "Oswald", "Inter", sans-serif;
+    font-size: 0.86rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.author__interests ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.author__interests li {
+    padding: 0.34rem 0;
+    color: var(--academic-text);
+    font-size: 0.94rem;
+    line-height: 1.4;
+    border-bottom: 1px solid var(--academic-border);
+}
+
+.author__interests li:last-child {
+    border-bottom: 0;
 }
 
 .author__urls_sm a:hover {
-    color: #fff;
-    background: var(--academic-primary);
-    box-shadow: 0 8px 20px rgba(26, 54, 93, 0.2);
-    transform: translateY(-3px);
-    text-decoration: none;
+    color: var(--academic-primary);
+    background: none;
+    box-shadow: none;
+    transform: none;
+    text-decoration: underline;
 }
 
 .sidebar__nav {
@@ -322,7 +361,11 @@ body {
 }
 
 .page .page__inner-wrap {
+    /* theme applies susy full() here, which floats it; a float ignores auto margins */
+    float: none !important;
     max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page__content {

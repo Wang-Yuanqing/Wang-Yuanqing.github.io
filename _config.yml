@@ -23,7 +23,10 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yuanqing Wang"
   avatar           : "images/wyq.jpeg"
-  bio              : "Math PhD Student · UT Dallas"
+  bio              : "Post-training &amp; self-improving agents · Math PhD student · UT Dallas"
+  interests:
+    - "Post-Training"
+    - "Self-Improving Agents"
   location         : "Richardson, TX"
   employer         :
   pubmed           :
