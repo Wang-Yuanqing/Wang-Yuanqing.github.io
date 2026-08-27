@@ -741,6 +741,11 @@ body {
     color: var(--academic-primary);
 }
 
+.publication-role {
+    color: var(--academic-muted);
+    font-weight: 700;
+}
+
 .publication-venue {
     color: var(--academic-muted);
     font-style: italic;

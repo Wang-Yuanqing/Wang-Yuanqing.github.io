@@ -1,6 +1,6 @@
 # Yuanqing Wang — Personal Academic Homepage
 
-Live at **https://wang-yuanqing.github.io/** — Jekyll on GitHub Pages.
+Live at **https://wang-yuanqing.github.io/**, built with Jekyll on GitHub Pages.
 
 ## Where things live
 

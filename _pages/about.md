@@ -12,7 +12,7 @@ redirect_from:
   <h1>About Me</h1>
   <div class="about-text">
     <p>
-      Hi there! I am Yuanqing Wang (王源清) — feel free to just call me Yuan.
+      Hi there! I am Yuanqing Wang (王源清). You can just call me Yuan.
       I am a Mathematics PhD student at
       <a href="https://www.utdallas.edu/" target="_blank" rel="noopener">The University of Texas at Dallas</a>,
       advised by
@@ -37,26 +37,12 @@ redirect_from:
         <span class="news-date">2026.08</span>
         <span class="news-content">dwDPO accepted to <strong>EMNLP 2026 Main</strong>, and Skill-CDPO accepted to <strong>EMNLP 2026 Findings</strong>.</span>
       </li>
-      <li>
-        <span class="news-date">2026.05</span>
-        <span class="news-content">Awarded the NSM Summer Research Fellowship at UT Dallas.</span>
-      </li>
-      <li>
-        <span class="news-date">2024.09</span>
-        <span class="news-content">Awarded the NSM McDermott PhD Admission Fellowship at UT Dallas.</span>
-      </li>
-      <li>
-        <span class="news-date">2024.06</span>
-        <span class="news-content">Received my M.S. in Mathematics from Capital Normal University.</span>
-      </li>
     </ul>
   </div>
 </section>
 
 <section id="publications" class="home-section publications-section">
   <h1>Publications</h1>
-  <p class="pub-note"><em>* indicates equal contribution</em></p>
-
   <div class="publication-list">
     <article class="publication-card">
       <figure class="publication-image">
@@ -65,7 +51,7 @@ redirect_from:
       </figure>
       <div class="publication-body">
         <h2>dwDPO: Training Multi-Turn LLM Agents via Divergence-Weighted Direct Preference Optimization</h2>
-        <p class="publication-authors">Jinghao Lin*, Yuhang Wu*, <strong><em>Yuanqing Wang</em></strong>*, Yuchen Li, Kangtianxingjian, Baris Coskunuzer, Xiawu Zheng</p>
+        <p class="publication-authors">Jinghao Lin*, Yuhang Wu*, <strong><em>Yuanqing Wang</em></strong>* <span class="publication-role">(co-first author)</span>, Yuchen Li, Kangtianxingjian, Baris Coskunuzer, Xiawu Zheng</p>
         <p class="publication-venue">EMNLP 2026 Main</p>
         <p class="publication-summary">Uses implicit rewards to pinpoint the critical steps in long-horizon agent trajectories, then weights each step by a principled measure of how much it mattered. The weighting is cheap and drop-in, and gives stable gains over standard DPO across six benchmarks.</p>
       </div>
@@ -119,7 +105,7 @@ redirect_from:
 
 - *2021.09 - 2024.06*, **Capital Normal University, Beijing, China**<br>
   M.S. in Mathematics<br>
-  Master's thesis: Notes on Calabi Conjecture and Kähler–Einstein Metric — [English]({{ '/files/Master_thesis.pdf' | relative_url }}) · [中文]({{ '/files/Master_thesis_Chinese.pdf' | relative_url }})
+  Master's thesis: Notes on Calabi Conjecture and Kähler–Einstein Metric — <a href="{{ '/files/Master_thesis.pdf' | relative_url }}" target="_blank" rel="noopener">English</a> · <a href="{{ '/files/Master_thesis_Chinese.pdf' | relative_url }}" target="_blank" rel="noopener">中文</a>
 
 - *2016.09 - 2021.06*, **Xiamen University, Xiamen, China**<br>
   B.S. in Information and Computational Science (Elite Students' Program)
