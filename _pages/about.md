@@ -51,7 +51,7 @@ redirect_from:
       </figure>
       <div class="publication-body">
         <h2>dwDPO: Training Multi-Turn LLM Agents via Divergence-Weighted Direct Preference Optimization</h2>
-        <p class="publication-authors">Jinghao Lin*, Yuhang Wu*, <strong><em>Yuanqing Wang</em></strong>* <span class="publication-role">(co-first author)</span>, Yuchen Li, Kangtianxingjian, Baris Coskunuzer, Xiawu Zheng</p>
+        <p class="publication-authors">Jinghao Lin*, Yuhang Wu*, <strong><em>Yuanqing Wang</em></strong>* <span class="publication-role">(co-first author)</span>, Yuchen Li, Kangtianxingjian, Baris Coskunuzer<sup>†</sup>, Xiawu Zheng<sup>†</sup></p>
         <p class="publication-venue">EMNLP 2026 Main</p>
         <p class="publication-summary">Uses implicit rewards to pinpoint the critical steps in long-horizon agent trajectories, then weights each step by a principled measure of how much it mattered. The weighting is cheap and drop-in, and gives stable gains over standard DPO across six benchmarks.</p>
       </div>
@@ -77,7 +77,7 @@ redirect_from:
       </figure>
       <div class="publication-body">
         <h2>AVSG: Audio–Visual Scene Graphs Measure What Omni-Modal Models Actually Hear</h2>
-        <p class="publication-authors"><strong><em>Yuanqing Wang</em></strong>, Shijian Deng, Baris Coskunuzer, Yapeng Tian</p>
+        <p class="publication-authors"><strong><em>Yuanqing Wang</em></strong>, Shijian Deng, Baris Coskunuzer<sup>†</sup>, Yapeng Tian<sup>†</sup></p>
         <p class="publication-venue">In submission</p>
       </div>
     </article>
@@ -89,7 +89,7 @@ redirect_from:
       </figure>
       <div class="publication-body">
         <h2>Heat Field Signatures: Density-Aware Geometry for Point Cloud Classification</h2>
-        <p class="publication-authors"><strong><em>Yuanqing Wang</em></strong>, Baris Coskunuzer</p>
+        <p class="publication-authors"><strong><em>Yuanqing Wang</em></strong>, Baris Coskunuzer<sup>†</sup></p>
         <p class="publication-venue">In submission</p>
       </div>
     </article>
