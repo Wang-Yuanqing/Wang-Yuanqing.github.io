@@ -244,19 +244,18 @@ body {
 
 .author__urls_sm {
     display: flex !important;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.32rem;
-    margin: 0 0 1.4rem;
+    justify-content: center;
+    gap: 0.35rem 1.15rem;
+    flex-wrap: wrap;
+    margin: 0 0 1.5rem;
     padding: 0;
-    font-size: 0.88rem;
-    text-align: left;
+    font-size: 0.95rem;
 }
 
 .author__urls_sm a {
     display: inline-flex;
     align-items: center;
-    gap: 0.45rem;
+    gap: 0.38rem;
     width: auto;
     height: auto;
     padding: 0;
@@ -264,16 +263,14 @@ body {
     background: none;
     border: 0;
     border-radius: 0;
-    font-size: 0.88rem;
+    font-size: 0.95rem;
     font-weight: 600;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .author__urls_sm a i {
-    width: 1.05rem;
-    font-size: 0.88rem;
-    text-align: center;
+    font-size: 0.95rem;
 }
 
 .author__urls_sm a:hover {
