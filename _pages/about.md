@@ -26,6 +26,9 @@ redirect_from:
       Before coming to UT Dallas, I received my M.S. in Mathematics from Capital Normal University
       and my B.S. in Information and Computational Science from Xiamen University.
     </p>
+    <p>
+      I am actively seeking research internship opportunities and would be happy to connect with researchers and teams working on related problems. Please feel free to reach out!
+    </p>
   </div>
 </section>
 
