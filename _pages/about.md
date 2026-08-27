@@ -27,7 +27,7 @@ redirect_from:
       and my B.S. in Information and Computational Science from Xiamen University.
     </p>
     <p>
-      <strong>I am actively seeking research internship opportunities</strong> and would be happy to connect with researchers and teams working on related problems. Please feel free to reach out!
+      <strong>I am actively seeking internship opportunities</strong> and would be happy to connect with researchers and teams working on related problems. Please feel free to reach out!
     </p>
   </div>
 </section>
