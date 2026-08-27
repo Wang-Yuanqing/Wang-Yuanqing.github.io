@@ -111,7 +111,8 @@ h1:before, .anchor:before {
 /* Academic homepage refresh inspired by Xirui Li's fixed-sidebar layout. */
 :root {
     --academic-primary: #1a365d;
-    --academic-accent: #b97abb;
+    --academic-accent: #6b7684;
+    --academic-rule: #cbd3de;
     --academic-text: #273548;
     --academic-muted: #566579;
     --academic-link: #245f9f;
@@ -191,12 +192,12 @@ body {
     margin: 0;
     padding: 0;
     object-fit: cover;
-    object-position: center top;
+    object-position: center;
     border: 0;
     border-radius: 0;
     box-shadow: none;
-    transform: scale(1.08);
-    transform-origin: center top;
+    transform: none;
+    transform-origin: center;
 }
 
 .profile_box > .author__avatar:hover {
@@ -347,7 +348,7 @@ body {
     margin: 0 0 1rem;
     padding-bottom: 0.55rem;
     color: var(--academic-primary);
-    border-bottom: 2px solid var(--academic-accent);
+    border-bottom: 2px solid var(--academic-rule);
     font-family: "Oswald", "Inter", sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
@@ -520,11 +521,11 @@ body {
     border: 1px solid var(--academic-border);
     border-radius: 8px;
     background: #fff;
-    scrollbar-color: var(--academic-accent) transparent;
+    scrollbar-color: #a8b1bf transparent;
 }
 
 .news-scroll:focus {
-    outline: 2px solid rgba(185, 122, 187, 0.45);
+    outline: 2px solid rgba(107, 118, 132, 0.4);
     outline-offset: 2px;
 }
 
@@ -669,7 +670,7 @@ body {
 
 .publication-card:hover {
     transform: translateY(-2px);
-    border-color: rgba(185, 122, 187, 0.55);
+    border-color: rgba(107, 118, 132, 0.45);
     box-shadow: 0 10px 26px rgba(26, 54, 93, 0.08);
 }
 
@@ -746,6 +747,13 @@ body {
     font-weight: 600;
 }
 
+.publication-summary {
+    margin-top: 0.5rem !important;
+    color: var(--academic-text);
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
 .publication-links {
     display: flex;
     flex-wrap: wrap;
@@ -792,7 +800,7 @@ body {
 
 .organization-card:hover {
     transform: translateY(-2px);
-    border-color: rgba(185, 122, 187, 0.55);
+    border-color: rgba(107, 118, 132, 0.45);
     box-shadow: 0 8px 22px rgba(26, 54, 93, 0.08);
 }
 

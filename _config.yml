@@ -9,7 +9,6 @@
 title                    : "Yuanqing Wang"
 description              : "Personal academic homepage of Yuanqing Wang, a Mathematics PhD student at UT Dallas researching post-training for long-horizon LLM agents."
 repository               : "Wang-Yuanqing/Wang-Yuanqing.github.io"
-google_scholar_stats_use_cdn : true
 
 # google analytics
 google_analytics_id      :   # get google_analytics_id from https://analytics.google.com/analytics/
@@ -23,14 +22,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Yuanqing Wang"
-  avatar           : "images/profile.png"
+  avatar           : "images/wyq.jpeg"
   bio              : "Math PhD Student · UT Dallas"
   location         : "Richardson, TX"
   employer         :
   pubmed           :
-  # googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
   email            : "yuanqing.wang@utdallas.edu"
-  cv               : "/files/CV_Yuanqing_UTD.pdf"
+  cv               : "/files/CV_Yuanqing.pdf"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -68,7 +66,6 @@ include:
   - files
 exclude:
   - docs
-  - google_scholar_crawler
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
