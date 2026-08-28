@@ -24,7 +24,9 @@ redirect_from:
     </p>
     <p>
       Before coming to UT Dallas, I received my M.S. in Mathematics from
-      <a href="https://en.wikipedia.org/wiki/Capital_Normal_University" target="_blank" rel="noopener">Capital Normal University</a>
+      <a href="https://en.wikipedia.org/wiki/Capital_Normal_University" target="_blank" rel="noopener">Capital Normal University</a>,
+      advised by
+      <a href="https://mathscinet.ams.org/mathscinet/2006/mathscinet/search/author.html?mrauthid=794099" target="_blank" rel="noopener">Professor Zhenlei Zhang</a>,
       and my B.S. in Information and Computational Science from
       <a href="https://en.wikipedia.org/wiki/Xiamen_University" target="_blank" rel="noopener">Xiamen University</a>.
     </p>
