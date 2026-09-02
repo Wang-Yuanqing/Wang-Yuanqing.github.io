@@ -110,6 +110,7 @@ h1:before, .anchor:before {
 
 /* Academic homepage refresh inspired by Xirui Li's fixed-sidebar layout. */
 :root {
+    color-scheme: light;
     --academic-primary: #1a365d;
     --academic-accent: #6b7684;
     --academic-rule: #cbd3de;
@@ -119,16 +120,58 @@ h1:before, .anchor:before {
     --academic-sidebar-bg: #f7fafc;
     --academic-border: #e3e8ef;
     --academic-soft: #f3f6f9;
+    --academic-bg: #fff;
+    --academic-surface: #fff;
+    --academic-figure-bg: #fff;
+    --academic-nav-hover: rgba(36, 95, 159, 0.1);
+    --academic-scrollbar: #a8b1bf;
+    --academic-focus: #245f9f;
+    --academic-hover-border: rgba(107, 118, 132, 0.45);
+    --academic-shadow: rgba(26, 54, 93, 0.12);
+    --academic-shadow-strong: rgba(26, 54, 93, 0.18);
+    --academic-shadow-card: rgba(26, 54, 93, 0.08);
+    --academic-figure-dim: none;
     --academic-sidebar-width: 400px;
+}
+
+/* Light switch: the same tokens with darker values. The sidebar toggle sets
+   data-theme on <html>; the choice lives in localStorage and is applied by
+   the bootstrap script in _includes/head.html before anything paints. */
+html[data-theme="dark"] {
+    color-scheme: dark;
+    --academic-primary: #e3ebf7;
+    --academic-accent: #9aa6b6;
+    --academic-rule: #354256;
+    --academic-text: #cbd5e1;
+    --academic-muted: #94a0b1;
+    --academic-link: #8ab8ee;
+    --academic-sidebar-bg: #111926;
+    --academic-border: #2a3546;
+    --academic-soft: #1a2331;
+    --academic-bg: #0e141d;
+    --academic-surface: #161e2a;
+    --academic-figure-bg: #f4f6f9;
+    --academic-nav-hover: rgba(138, 184, 238, 0.12);
+    --academic-scrollbar: #4a566a;
+    --academic-focus: #8ab8ee;
+    --academic-hover-border: rgba(154, 166, 182, 0.5);
+    --academic-shadow: rgba(0, 0, 0, 0.45);
+    --academic-shadow-strong: rgba(0, 0, 0, 0.6);
+    --academic-shadow-card: rgba(0, 0, 0, 0.35);
+    --academic-figure-dim: brightness(0.9);
 }
 
 html {
     scroll-behavior: smooth;
+    /* the theme reset paints html white; the canvas below the
+       content must follow the theme too */
+    background: var(--academic-bg);
 }
 
 body {
     color: var(--academic-text);
-    background: #fff;
+    background: var(--academic-bg);
+    transition: background-color 0.25s ease, color 0.25s ease;
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     line-height: 1.7;
 }
@@ -159,6 +202,7 @@ body {
     overflow-y: auto;
     background: var(--academic-sidebar-bg);
     border-right: 1px solid var(--academic-border);
+    transition: background-color 0.25s ease, border-color 0.25s ease;
     display: flex;
     flex-direction: column;
     z-index: 10;
@@ -179,7 +223,7 @@ body {
     overflow: hidden;
     border: 3px solid var(--academic-border);
     border-radius: 50%;
-    box-shadow: 0 8px 24px rgba(26, 54, 93, 0.12);
+    box-shadow: 0 8px 24px var(--academic-shadow);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -202,7 +246,7 @@ body {
 
 .profile_box > .author__avatar:hover {
     transform: translateY(-2px) scale(1.03);
-    box-shadow: 0 12px 30px rgba(26, 54, 93, 0.18);
+    box-shadow: 0 12px 30px var(--academic-shadow-strong);
 }
 
 .author__content {
@@ -312,12 +356,65 @@ body {
 .sidebar__nav a:hover,
 .sidebar__nav a.is-active {
     color: var(--academic-link);
-    background: rgba(36, 95, 159, 0.1);
+    background: var(--academic-nav-hover);
     text-decoration: none;
 }
 
 .sidebar__nav a:hover {
     transform: translateX(2px);
+}
+
+/* Light switch. A bare sun/moon icon as the first item of the tab stack.
+   Its 1rem side padding equals .sidebar__nav a's, so the glyph's left edge
+   sits exactly on the tab text edge. Do not add fa-fw to the icons: it
+   would centre the glyph in a wider box and shift it right. */
+.sidebar__nav .sidebar__nav-tool {
+    display: flex;
+    margin: 0 0 0.2rem;
+}
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0.45rem 1rem;
+    color: var(--academic-text);
+    background: none;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: color 0.2s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--academic-link);
+}
+
+.theme-toggle:focus-visible {
+    color: var(--academic-link);
+    outline: 2px solid var(--academic-focus);
+    outline-offset: 2px;
+}
+
+.theme-toggle .theme-toggle__sun {
+    display: none;
+}
+
+html[data-theme="dark"] .theme-toggle .theme-toggle__moon {
+    display: none;
+}
+
+html[data-theme="dark"] .theme-toggle .theme-toggle__sun {
+    display: inline-block;
+}
+
+/* without JS the switch cannot work, so do not show it */
+html.no-js .sidebar__nav .sidebar__nav-tool {
+    display: none;
 }
 
 .page {
@@ -540,12 +637,12 @@ body {
     padding: 0.1rem 0.9rem;
     border: 1px solid var(--academic-border);
     border-radius: 8px;
-    background: #fff;
-    scrollbar-color: #a8b1bf transparent;
+    background: var(--academic-surface);
+    scrollbar-color: var(--academic-scrollbar) transparent;
 }
 
 .news-scroll:focus {
-    outline: 2px solid rgba(107, 118, 132, 0.4);
+    outline: 2px solid var(--academic-focus);
     outline-offset: 2px;
 }
 
@@ -684,14 +781,14 @@ body {
     padding: 0.75rem;
     border: 1px solid var(--academic-border);
     border-radius: 8px;
-    background: #fff;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    background: var(--academic-surface);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.25s ease;
 }
 
 .publication-card:hover {
     transform: translateY(-2px);
-    border-color: rgba(107, 118, 132, 0.45);
-    box-shadow: 0 10px 26px rgba(26, 54, 93, 0.08);
+    border-color: var(--academic-hover-border);
+    box-shadow: 0 10px 26px var(--academic-shadow-card);
 }
 
 .publication-image {
@@ -706,7 +803,8 @@ body {
     overflow: hidden;
     border: 1px solid var(--academic-border);
     border-radius: 6px;
-    background: #fff;
+    background: var(--academic-figure-bg);
+    filter: var(--academic-figure-dim);
 }
 
 .publication-image img {
@@ -969,5 +1067,16 @@ body {
     .organization-card a {
         width: fit-content;
         margin-top: 0.25rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .sidebar__nav .sidebar__nav-tool {
+        margin: 0;
+    }
+
+    .theme-toggle {
+        padding: 0.45rem 0.9rem;
+        font-size: 0.98rem;
     }
 }

@@ -30,6 +30,29 @@
     updateActiveSection();
     window.addEventListener("scroll", updateActiveSection, { passive: true });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var toggle = document.querySelector(".theme-toggle");
+    if (!toggle) return;
+    var root = document.documentElement;
+    var meta = document.querySelector('meta[name="theme-color"]');
+
+    function sync() {
+      var dark = root.getAttribute("data-theme") === "dark";
+      toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+      toggle.setAttribute("title", dark ? "Switch to light mode" : "Switch to dark mode");
+      if (meta) meta.setAttribute("content", dark ? "#0e141d" : "#ffffff");
+    }
+
+    toggle.addEventListener("click", function () {
+      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+      sync();
+    });
+
+    sync();
+  });
 </script>
 
 {% include analytics.html %}

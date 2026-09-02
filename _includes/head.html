@@ -9,8 +9,21 @@
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
+<meta name="theme-color" content="#ffffff">
+<script>
+  /* Light switch: apply the saved theme before anything paints. The site
+     starts light; it only turns dark when the sidebar toggle is used. Block
+     comments on purpose: they survive any HTML whitespace compression. */
+  (function () {
+    var theme = 'light';
+    try { if (localStorage.getItem('theme') === 'dark') { theme = 'dark'; } } catch (e) {}
+    document.documentElement.setAttribute('data-theme', theme);
+    var m = document.querySelector('meta[name="theme-color"]');
+    if (m) { m.setAttribute('content', theme === 'dark' ? '#0e141d' : '#ffffff'); }
+  })();
+</script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/main.css?v={{ site.time | date: '%s' }}">
 
 <meta http-equiv="cleartype" content="on">
